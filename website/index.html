@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreeVoice: Voice Typing for Windows</title>
+  <meta name="description" content="Lightweight voice typing for Windows using AutoHotkey v2. Press the backtick key once to start listening, press again to type anywhere." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img src="icon.png" alt="FreeVoice icon" class="brand-icon" width="24" height="24" />
+        <span>FreeVoice</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <span class="version-tag">v1.0.0</span>
+        <a href="#how-it-works">How it works</a>
+        <a href="#shortcuts">Shortcuts</a>
+        <a href="https://www.autohotkey.com/" target="_blank" rel="noopener noreferrer">AutoHotkey v2</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero reveal">
+      <h1>Voice typing for Windows.</h1>
+      <p class="subtitle">
+        Press <kbd>`</kbd> once to start listening, press again to type anywhere on Windows. Runs quietly in your system tray.
+      </p>
+
+      <div class="download-box">
+        <a id="download-btn" href="FreeVoice-Setup.exe" download class="btn-primary">
+          Download for Windows (.exe)
+        </a>
+        <p class="download-meta">FreeVoice-Setup.exe &middot; v1.0.0 &middot; Windows 10 &amp; 11 (64-bit)</p>
+      </div>
+
+      <div class="demo-card" id="hotkey-demo" aria-live="polite">
+        <div class="demo-top">
+          <button type="button" id="demo-trigger" class="demo-key-btn">
+            <kbd class="demo-kbd">`</kbd>
+            <span id="demo-btn-label">Click here or press ` key</span>
+          </button>
+          <span id="demo-pill" class="demo-pill" data-state="idle">
+            <span class="demo-dot" aria-hidden="true"></span>
+            <span id="demo-pill-text">Idle</span>
+          </span>
+        </div>
+        <div class="demo-field" id="demo-output">
+          <span class="demo-placeholder">Preview: press ` once to start Listening..., press again to insert text.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section reveal">
+      <h2>How it works</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Install normally</h3>
+          <p>Run <code>FreeVoice-Setup.exe</code> and complete the standard Windows setup wizard. Launch FreeVoice from your desktop or Start menu.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Press <kbd>`</kbd> once</h3>
+          <p>Place your cursor in any app, such as Chrome, VS Code, Word, or Notepad, and press <kbd>`</kbd> once to start <code>Listening...</code>.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Speak &amp; press <kbd>`</kbd> again</h3>
+          <p>Speak naturally in English or Bengali. Press <kbd>`</kbd> a second time to transcribe and type your words directly at the cursor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="shortcuts" class="section reveal">
+      <h2>Shortcuts &amp; Requirements</h2>
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>Shortcut / Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Voice typing (Toggle mode, default)</td>
+            <td>Press <kbd>`</kbd> once to start listening, press <kbd>`</kbd> again to stop and insert text</td>
+          </tr>
+          <tr>
+            <td>Voice typing (Hold mode, optional)</td>
+            <td>Switch in tray menu: hold <kbd>`</kbd> to speak, release to insert text</td>
+          </tr>
+          <tr>
+            <td>Type a literal backtick (<code>`</code>)</td>
+            <td>Press <kbd>Ctrl</kbd> + <kbd>`</kbd></td>
+          </tr>
+          <tr>
+            <td>Type a literal tilde (<code>~</code>)</td>
+            <td>Press <kbd>Shift</kbd> + <kbd>`</kbd> (works normally)</td>
+          </tr>
+          <tr>
+            <td>Operating System</td>
+            <td>Windows 10 or Windows 11 (64-bit)</td>
+          </tr>
+          <tr>
+            <td>Engine &amp; Offline Support</td>
+            <td>AutoHotkey v2 and local faster-whisper (works offline after initial model download)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal">
+    <div class="container footer-inner">
+      <span>FreeVoice &middot; Built with AutoHotkey v2</span>
+      <span>MIT License</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
