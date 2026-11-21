@@ -7,7 +7,7 @@ Lightweight Windows voice typing powered by **AutoHotkey v2** and local **Whispe
 - `app/` : Windows voice typing application (`FreeVoice.ahk`, `stt_server.py`, `config.ini`, `installer.iss`, `InstallerWizard.cs`, `build_installer.bat`, `setup.bat`, `run.bat`, `launch.bat`)
 - `website/` : Minimal, pure-white download landing page (`index.html`, `style.css`, `script.js`, `FreeVoice-Setup.exe`)
 
-## Quick Start (Windows)
+## Quick Start (Windows) -----
 
 1. Run `website\FreeVoice-Setup.exe` (or `app\dist\FreeVoice-Setup.exe`) to install FreeVoice with the standard Windows setup wizard.
 2. Launch **FreeVoice** from your Desktop or Start Menu.
