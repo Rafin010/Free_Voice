@@ -20,5 +20,4 @@ Lightweight Windows voice typing powered by **AutoHotkey v2** and local **Whispe
 
 Run `app\build_installer.bat` on Windows to package `app\dist\FreeVoice-Setup.exe` and copy it to `website\FreeVoice-Setup.exe`.
 
-# hello ja
-# ==================
+
